@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  def map
+  def home
   end
 
   def chat
