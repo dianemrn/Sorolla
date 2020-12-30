@@ -1,0 +1,22 @@
+<div class="w-screen flex flex-row items-center p-1 justify-between bg-white shadow-xs">
+  <div class="flex flex-row-reverse mr-4 ml-4 md:hidden">
+    <i class="fas fa-bars"></i>
+  </div >
+    <div class="flex flex-row-reverse mr-8 hidden md:flex">
+      <% if user_signed_in? %>
+        <div class="text-gray-700 text-center bg-blue-400 px-4 py-2 m-2 rounded-lg">
+          <%= link_to "Paintings", paintings_path %>
+        </div>
+         <div class="text-gray-700 text-center bg-blue-400 px-4 py-2 m-2 rounded-lg">
+        <!-- <$%= link_to "Messages", chatroom_id_path %> -->
+        </div>
+        <div class="text-gray-700 text-center bg-blue-400 px-4 py-2 m-2 rounded-lg">
+            <%= link_to "Log out", destroy_user_session_path, method: :delete %>
+        </div>
+      <% else %>
+        <div class="text-gray-700 text-center bg-blue-400 px-4 py-2 m-2 rounded-lg">
+          <%= link_to "Log in", new_user_session_path, class: "nav-link" %>
+        </div>
+      <% end %>
+    </div>
+</div>
