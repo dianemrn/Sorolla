@@ -1,5 +1,258 @@
-<h1> Je suis dans paintings</h1>
+<header class= "flex items-center">
+    <div>
+      <img class = "h-10 rounded-lg m-8" src="https://casadelpoeta.es/wp-content/uploads/2017/07/retrato-de-sorolla-en-un-jardin-para-pintar.jpg">
+    </div>
+      <p class= "text-center italic font-bold text-2xl">
+        Peintures de Joaquín Sorolla
+      </p>
+</header>
 <div id="map"
      style="width: 100%; height: 600px;"
      data-markers="<%= @markers.to_json %>"
      data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"></div>
+
+<div class="container my-12 mx-auto px-4 md:px-12">
+    <div class="flex flex-wrap -mx-1 lg:-mx-4">
+
+        <!-- Column -->
+        <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
+
+            <!-- Article -->
+            <article class="overflow-hidden rounded-lg shadow-lg">
+
+                <a href="#">
+                    <img alt="Placeholder" class="block h-auto w-full" src="https://assets.catawiki.nl/assets/2018/5/16/6/6/2/662dae8c-c269-4212-ae7b-ecc5b28744b1.jpg">
+                </a>
+
+                <header class="flex items-center justify-between leading-tight p-2 md:p-4">
+                    <h1 class="text-lg">
+                        <a class="no-underline hover:underline text-black" href="#">
+                            Pêcheurs de Valence
+                        </a>
+                    </h1>
+                    <p class="text-grey-darker text-sm">
+                       1897
+                    </p>
+                </header>
+
+                <footer class="flex items-center justify-between leading-none p-2 md:p-4">
+                    <a class="flex items-center no-underline hover:underline text-black" href="#">
+                        <img alt="Placeholder" class="block rounded-full h-6" src="https://www.flaticon.com/svg/static/icons/svg/93/93140.svg">
+                        <p class="ml-2 text-sm">
+                            Collection privée
+                        </p>
+                    </a>
+                    <a class="no-underline text-grey-darker hover:text-red-dark" href="#">
+                        <span class="hidden">Like</span>
+                        <i class="fa fa-heart"></i>
+                    </a>
+                </footer>
+
+            </article>
+            <!-- END Article -->
+
+        </div>
+        <!-- END Column -->
+
+        <!-- Column -->
+        <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
+
+            <!-- Article -->
+            <article class="overflow-hidden rounded-lg shadow-lg">
+
+                <a href="#">
+                    <img alt="Placeholder" class="block h-auto w-full" src="https://www.photo12.com/topics/art/994_sorolla/img/LMY13007_C9540W.JPG">
+                </a>
+
+                <header class="flex items-center justify-between leading-tight p-2 md:p-4">
+                    <h1 class="text-lg">
+                        <a class="no-underline hover:underline text-black" href="#">
+                            Promenade en bord de mer
+                        </a>
+                    </h1>
+                    <p class="text-grey-darker text-sm">
+                       1909
+                    </p>
+                </header>
+
+                <footer class="flex items-center justify-between leading-none p-2 md:p-4">
+                    <a class="flex items-center no-underline hover:underline text-black" href="#">
+                        <img alt="Placeholder" class="block rounded-full h-6" src="https://www.flaticon.com/svg/static/icons/svg/535/535193.svg">
+                        <p class="ml-2 text-sm">
+                            Musée Sorolla, Madrid
+                        </p>
+                    </a>
+                    <a class="no-underline text-grey-darker hover:text-red-dark" href="#">
+                        <span class="hidden">Like</span>
+                        <i class="fa fa-heart"></i>
+                    </a>
+                </footer>
+
+            </article>
+            <!-- END Article -->
+
+        </div>
+        <!-- END Column -->
+
+        <!-- Column -->
+        <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
+
+            <!-- Article -->
+            <article class="overflow-hidden rounded-lg shadow-lg">
+
+                <a href="#">
+                    <img alt="Placeholder" class="block h-auto w-full" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Museo_Sorolla_-_01232_-_Jard%C3%ADn_de_la_Casa_Sorolla.jpg/520px-Museo_Sorolla_-_01232_-_Jard%C3%ADn_de_la_Casa_Sorolla.jpg">
+                </a>
+
+                <header class="flex items-center justify-between leading-tight p-2 md:p-4">
+                    <h1 class="text-lg">
+                        <a class="no-underline hover:underline text-black" href="#">
+                            Jardin de la Maison Sorolla
+                        </a>
+                    </h1>
+                    <p class="text-grey-darker text-sm">
+                        1918
+                    </p>
+                </header>
+
+                <footer class="flex items-center justify-between leading-none p-2 md:p-4">
+                    <a class="flex items-center no-underline hover:underline text-black" href="#">
+                        <img alt="Placeholder" class="block rounded-full h-6" src="https://www.flaticon.com/svg/static/icons/svg/535/535193.svg">
+                        <p class="ml-2 text-sm">
+                            Musée Sorolla, Madrid
+                        </p>
+                    </a>
+                    <a class="no-underline text-grey-darker hover:text-red-dark" href="#">
+                        <span class="hidden">Like</span>
+                        <i class="fa fa-heart"></i>
+                    </a>
+                </footer>
+
+            </article>
+            <!-- END Article -->
+
+        </div>
+        <!-- END Column -->
+
+        <!-- Column -->
+        <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
+
+            <!-- Article -->
+            <article class="overflow-hidden rounded-lg shadow-lg">
+
+                <a href="#">
+                    <img alt="Placeholder" class="block h-auto w-full" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Elena_vestida_con_t%C3%BAnica_amarilla_by_Joaqu%C3%ADn_Sorolla%2C_1909.jpg/440px-Elena_vestida_con_t%C3%BAnica_amarilla_by_Joaqu%C3%ADn_Sorolla%2C_1909.jpg">
+                </a>
+
+                <header class="flex items-center justify-between leading-tight p-2 md:p-4">
+                    <h1 class="text-lg">
+                        <a class="no-underline hover:underline text-black" href="#">
+                            Portrait d'Elena en chemise jaune
+                        </a>
+                    </h1>
+                    <p class="text-grey-darker text-sm">
+                        1909
+                    </p>
+                </header>
+
+                <footer class="flex items-center justify-between leading-none p-2 md:p-4">
+                    <a class="flex items-center no-underline hover:underline text-black" href="#">
+                        <img alt="Placeholder" class="block rounded-full h-6" src="https://www.flaticon.com/svg/static/icons/svg/93/93140.svg">
+                        <p class="ml-2 text-sm">
+                            Collection privée
+                        </p>
+                    </a>
+                    <a class="no-underline text-grey-darker hover:text-red-dark" href="#">
+                        <span class="hidden">Like</span>
+                        <i class="fa fa-heart"></i>
+                    </a>
+                </footer>
+
+            </article>
+            <!-- END Article -->
+
+        </div>
+        <!-- END Column -->
+
+        <!-- Column -->
+        <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
+
+            <!-- Article -->
+            <article class="overflow-hidden rounded-lg shadow-lg">
+
+                <a href="#">
+                    <img alt="Placeholder" class="block h-auto w-full" src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Cosiendo_la_vela.jpg">
+                </a>
+
+                <header class="flex items-center justify-between leading-tight p-2 md:p-4">
+                    <h1 class="text-lg">
+                        <a class="no-underline hover:underline text-black" href="#">
+                            Cousant la voile
+                        </a>
+                    </h1>
+                    <p class="text-grey-darker text-sm">
+                        1896
+                    </p>
+                </header>
+
+                <footer class="flex items-center justify-between leading-none p-2 md:p-4">
+                    <a class="flex items-center no-underline hover:underline text-black" href="#">
+                        <img alt="Placeholder" class="block rounded-full h-6" src="https://www.flaticon.com/svg/static/icons/svg/535/535193.svg">
+                        <p class="ml-2 text-sm">
+                            Fondazione Musei Civici di Venezia
+                        </p>
+                    </a>
+                    <a class="no-underline text-grey-darker hover:text-red-dark" href="#">
+                        <span class="hidden">Like</span>
+                        <i class="fa fa-heart"></i>
+                    </a>
+                </footer>
+
+            </article>
+            <!-- END Article -->
+
+        </div>
+        <!-- END Column -->
+
+        <!-- Column -->
+        <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
+
+            <!-- Article -->
+            <article class="overflow-hidden rounded-lg shadow-lg">
+
+                <a href="#">
+                    <img alt="Placeholder" class="block h-auto w-full" src="data:image/jpeg;base64,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">
+                </a>
+
+                <header class="flex items-center justify-between leading-tight p-2 md:p-4">
+                    <h1 class="text-lg">
+                        <a class="no-underline hover:underline text-black" href="#">
+                            Le Bain du cheval
+                        </a>
+                    </h1>
+                    <p class="text-grey-darker text-sm">
+                        1909
+                    </p>
+                </header>
+
+                <footer class="flex items-center justify-between leading-none p-2 md:p-4">
+                    <a class="flex items-center no-underline hover:underline text-black" href="#">
+                        <img alt="Placeholder" class="block rounded-full h-6" src="https://www.flaticon.com/svg/static/icons/svg/535/535193.svg">
+                        <p class="ml-2 text-sm">
+                            Musée Sorolla, Madrid
+                        </p>
+                    </a>
+                    <a class="no-underline text-grey-darker hover:text-red-dark" href="#">
+                        <span class="hidden">Like</span>
+                        <i class="fa fa-heart"></i>
+                    </a>
+                </footer>
+
+            </article>
+            <!-- END Article -->
+
+        </div>
+        <!-- END Column -->
+
+    </div>
+</div>
